@@ -1,0 +1,218 @@
+body{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.79) 0%, #FFFFFF 100%);    padding: 20px;
+}
+
+/* menu */
+.menu-header{
+    height: 100%;
+}
+
+.menu_pagina_principal{
+    background: rgba(255, 255, 255, 0.7);    text-align: center;
+    height: 100%;
+    border-radius: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.icone-home, .icone-perfil-usuario, .icone-de-carteira, .icone-de-configuracao  {
+    display: inline-block;
+    padding: 25px;
+}
+
+.menu_pagina_principal a {
+    width: 100%;
+    float: left;
+}
+
+.menu_pagina_principal a:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* meio 1° linha*/
+
+.container-sections{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.719) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+
+.apresentacao{
+    background: rgba(255, 255, 255, 0.8);    
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.cabecalho-apresentacao, .cabecalho-frase{
+    font-family: 'Inter', sans-serif;
+}
+
+/* meio 2° linha */
+
+/* .conteudo-meio{
+    margin: 15px;
+} */
+
+.section_saldo-atual, .section_receita, .section_despesas{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* meio linha 3 */
+.section_proximas-transacoes, .section_meus-objetivos{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 293px;
+}
+
+.title-section{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.valor-atual {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 40px;
+}
+
+.icone-status{
+    display: inline-block;
+    width: 100%;
+}
+
+.icone-status img{
+    float: right;
+
+}
+
+.icones{
+    width: 100%;
+    text-align: center;
+}
+
+.icones img {
+    height: 125px;
+    width: auto;
+}
+
+.icone-barras, .icone-setas-up, .icone-grafico, .icone-setas-down {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+    
+.ultimas-entradas-registradas{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+footer {
+	text-align: center;
+    height: 100%;
+    margin-top: 10px;
+    color: aliceblue;
+    
+}
+
+.background-profile1, .background-profile2{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.background-profile1{
+    margin-bottom: 15px;
+}
+
+.form-group, .background-profile2{
+    
+}
+
+.cabecalho-profile{
+    height: 892px;
+}
+
+.submit-novasenha {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.submit-apagarconta {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+@media (max-width:1024px){
+    .menu_pagina_principal{
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .menu_pagina_principal a  {
+        width: 50%;
+    }
+    .menu_pagina_principal a:last-child {
+        position: relative;
+    }
+}
+
+@media (max-width:425px) {
+    .menu_pagina_principal a {
+        width: auto;
+    }
+    .menu_pagina_principal a:last-child {
+        position: relative;
+    }
+    .icone-de-configuracao {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu_pagina_principal a  {
+        width: 50%;
+    }
+    .menu_pagina_principal a:last-child {
+        position: relative;
+        width: 50%;
+    }
+
+    @media (max-width:320px){
+        .menu_pagina_principal a  {
+            width: 50%;
+        }
+        .menu_pagina_principal a:last-child {
+            position: relative;
+            width: 50%;
+        }
+        .menu-header{
+            justify-content: center;
+        }
+    }
+}
+
