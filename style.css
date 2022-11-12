@@ -1,17 +1,34 @@
-body{
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.79) 0%, #FFFFFF 100%);    padding: 20px;
-}
+
+/* TELA DE LOGIN + TELA DE REGISTER */
+.gradient-custom {
+    background: #035723;
+    
+    /* Para Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(17, 203, 64), rgba(37, 117, 252, 1));
+    
+    /* Para Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(17, 203, 48), rgba(37, 117, 252, 1))
+    }
 
 /* menu */
 .menu-header{
     height: 100%;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    padding: 15px!important;
+}
+
+.margem-meio{
+    padding: 15px !important;
 }
 
 .menu_pagina_principal{
-    background: rgba(255, 255, 255, 0.7);    text-align: center;
+    background: rgba(255, 255, 255, 0.7);    
+    text-align: center;
     height: 100%;
     border-radius: 20px;
-    padding-top: 20px;
     position: relative;
 }
 
@@ -20,6 +37,10 @@ body{
     padding: 25px;
 }
 
+.img-thumbnail {
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: 0px solid!important;
+}
 .menu_pagina_principal a {
     width: 100%;
     float: left;
@@ -38,6 +59,13 @@ body{
     border-radius: 20px;
     padding: 15px;
     
+}
+.padding-especifico-container {
+    width: 80%;
+    height: 70%!important;
+    margin: 15px auto !important;
+    float: none !important;
+
 }
 
 .apresentacao{
@@ -65,6 +93,12 @@ body{
 }
 
 /* meio linha 3 */
+
+.ultimas-entradas-registradas-caixa{
+    padding-bottom: 25px;
+
+}
+
 .section_proximas-transacoes, .section_meus-objetivos{
     background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
     border-radius: 20px;
@@ -122,22 +156,27 @@ body{
     height: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    padding-top: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 15px;
+
+
 }
 
 footer {
 	text-align: center;
-    height: 100%;
-    margin-top: 10px;
     color: aliceblue;
     
 }
 
 .background-profile1, .background-profile2{
     background: linear-gradient(270deg,rgba(255, 255, 255, 0.651) 108.39%,rgba(255, 255, 255, 0.4) 33.68%);
-    width: 60%;
+    width: 70%;
     padding: 15px;
     border-radius: 20px;
+    margin: 15px auto !important;
+    float: none !important;
+    height: 340px;
 }
 
 .background-profile1{
@@ -148,9 +187,7 @@ footer {
     
 }
 
-.cabecalho-profile{
-    height: 892px;
-}
+
 
 .submit-novasenha {
     padding-top: 15px;
@@ -165,33 +202,38 @@ footer {
 }
 
 
-@media (max-width:1024px){
+
+
+ @media (max-width:1024px){
+    
     .menu_pagina_principal{
         position: relative;
-        right: 30px;
+    }
+    /* .menu_pagina_principal a  {
+        width: 50%;
+    } */
+    .menu_pagina_principal a:last-child {
+        position: relative;
+    }
+    .menu-header{
+        justify-content: center;
+    }
+    .icone-de-configuracao {
     }
 }
 
-@media (max-width:768px){
+
+@media (max-width:425px) {
+    
     .menu_pagina_principal a  {
         width: 50%;
     }
-    .menu_pagina_principal a:last-child {
-        position: relative;
-    }
-}
+    .ultimas-entradas-registradas {
+        margin-left: 15px;
 
-@media (max-width:425px) {
-    .menu_pagina_principal a {
-        width: auto;
-    }
-    .menu_pagina_principal a:last-child {
-        position: relative;
-    }
-    .icone-de-configuracao {
-        padding: 20px;
     }
 }
+    
 
 @media (max-width: 375px) {
     .menu_pagina_principal a  {
@@ -215,4 +257,6 @@ footer {
         }
     }
 }
+
+
 
