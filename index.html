@@ -105,6 +105,7 @@
                     <div class="col-md-12 cabecalho-home">
                         <div class="apresentacao">
                             <div class="cabecalho-apresentacao">
+                                <!-- NOME USUÁRIO DEVE SER O USERNAME, TABELA: T_SIF_USUARIO, ATRIBUTO: nm_usuario; -->
                                 <h1>Olá "Nome Usuário"</h1>
                             </div>
                             <div class="cabecalho-frase">
@@ -125,6 +126,8 @@
                             <div class="title-section">
                                 <span>SALDO ATUAL</span>
                             </div>
+                            <!-- SALDO ATUAL DEVE SER A DIFERENÇA ENTRE OS VALORES DO TIPO DESPESA E RECEITA
+                             T_SIF_ORCAMENTO, ATRIBUTO: vl_orcamento, in_categoria; -->
                             <div class="valor-atual">
                                 <span>Valor</span>
                             </div>
@@ -142,6 +145,8 @@
                             <div class="title-section">
                                 <span>RECEITA</span>
                             </div>
+                            <!-- VALOR DEVE EXPOR SOMA DOS VALORES DO TIPO RECEITA
+                             T_SIF_ORCAMENTO, ATRIBUTO: vl_orcamento, in_categoria (RECEITA) -->
                             <div class="valor-atual">
                                 <span>Valor</span>
                             </div>
@@ -159,6 +164,8 @@
                             <div class="title-section">
                                 <span>DESPESAS</span>
                             </div>
+                            <!-- "VALOR" DEVE EXPOR SOMA DOS VALORES DO TIPO DESPESA
+                             T_SIF_ORCAMENTO, ATRIBUTO: vl_orcamento, in_categoria (DESPESA) -->
                             <div class="valor-atual">
                                 <span>Valor</span>
                             </div>
@@ -177,6 +184,8 @@
                             <div class="title-section">
                                 <span>INVESTIMENTOS</span>
                             </div>
+                            <!-- VALOR DEVE EXPOR SOMA DE TODOS INVESTIMENTOS
+                             T_SIF_INVESTIMENTO, ATRIBUTO: vl_aplicacao -->
                             <div class="valor-atual">
                                 <span>Valor</span>
                             </div>
@@ -189,6 +198,8 @@
 
                     <div class="col-md-8">
                         <div class="section_meus-objetivos">
+                            <!-- VALOR DEVE EXPOR OS TEXTOS COM AS DESCRIÇÕES EM
+                             T_SIF_OBJETIVOS_FINANCEIROS, ATRIBUTO: tx_descricao -->
                             <div class="title-section">
                                 <span>MEUS OBJETIVOS</span>
                             </div>
